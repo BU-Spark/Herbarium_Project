@@ -2,8 +2,25 @@
 @PalmPalm7
 
 # How to use
-* Run the ./scraper/src/run.sh shell to start the CVH scraping ETL pipeline. 
-* The pipeline mainly used selenium for automation. Please modify path variables accordingly.
+* Please refer to /ml-herbarium/Spring2024/scraper/src/ML_Herbaria_CVH_Web_Scraper.ipynb
+* The pipeline could be ran on SCC or Google Colab. It mainly used selenium for automation. Please modify path variables accordingly.
+
+# Progress Report - May 7th, 2024
+@PalmPalm7
+## Progress
+* Finished scraping ~30000 entities
+* ~15,000 samples are clean, with no duplications and no missing field
+* 1000 samples were selected for benchmark
+* Have updated the script with headless to run without a physical browser. Chronium driver is still needed.
+
+## Problem
+* Need to implement failed-to-scrape logic.
+* Need to handle more concurrencies
+* Preferrable with dockerized container and orchestration.
+
+## Plan
+* SE the scraper code
+* Capusalize it with docker.
 
 # Progress Report - March 31st, 2024
 @PalmPalm7
